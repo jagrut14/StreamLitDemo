@@ -8,6 +8,12 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import os
+from PIL import Image
+
+# Set title of our Front web app
+image = Image.open('image.png')
+st.image(image, use_column_width=True)
+
 st.title('Nilkamal NSS-Excel Automation')
 
 
