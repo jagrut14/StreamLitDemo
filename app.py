@@ -117,8 +117,8 @@ for i in range(1,len(split_values)):
 #Apending the first 0 load value row 
 temp_t2=data_test.tail(1)
 x=temp_t2.iloc[0,-1]+1
-data_t2=data.iloc[x:,:]
-top10=data_t2.iloc[0:11,:]
+data_t2=data.iloc[x+20:,:]
+top10=data_t2.iloc[0:35,:]
 wanted=top10[top10.Load_1_kn == top10.Load_1_kn.min()]
     
 d=d.append(wanted.iloc[0,:])
@@ -144,7 +144,7 @@ d=d.append(data_t2[data_t2['index.no']==ind_f2])
    
    #d['index.no']+=14
    #d.index=d['index.no']
-   #d = d.iloc[:, :-1]    
+   #d = d.iloc[:, :-1]
 
 #finald=pd.Series(lis)
 d['index.no']+=14
@@ -153,6 +153,6 @@ d = d.iloc[:, :-1]
 filename=st.text_input("Entre the desired name of Output file")
 d.to_excel(filename+'.xlsx')
 st.write(d)
-st.success("Completed, Please check you local drive")
+st.success("Completed, Please check you local drive from where you uploaded the file")
 
     
