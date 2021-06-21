@@ -49,7 +49,7 @@ if file is not None:
     #split_size=int(input("Enter number of splits you want: "))
 
 
-    if st.checkbox("Select, if this is you first text"):
+    if st.checkbox("Select, if this is you first test"):
         test_1=1
     else:
         test_1=0
