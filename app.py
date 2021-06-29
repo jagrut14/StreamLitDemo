@@ -159,7 +159,7 @@ if file is not None:
     #finald=pd.Series(lis)
     d['index.no']+=14
     d.index=d['index.no']
-    d = d.iloc[:, :-1]
+    d = d.iloc[:, :]
 
     #d.to_excel(filename+'.xlsx', engine='xlsxwriter')
     st.write(d)
