@@ -162,7 +162,7 @@ if file is not None:
     d = d.iloc[:, :-1]
 
     #d.to_excel(filename+'.xlsx', engine='xlsxwriter')
-    #st.write(d)
+    st.write(d)
     #t.success("Completed, Please check you local drive from where you uploaded the file")
 
     def to_excel(d):
